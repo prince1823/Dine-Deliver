@@ -13,6 +13,7 @@
   "description": "# Episode 04 - Talk is Cheap, show me the code!",
   "main": "index.js",
   "scripts": {
+    "start":"npx parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
