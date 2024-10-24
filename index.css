@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: block;
+  margin: 0 auto;
+  position: relative; /* Add relative positioning */
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid black;
+  align-items: center;
+  animation: fadeIn 1s ease-in; /* Add fade-in animation */
+  position: relative; /* Ensure header appears above video */
+  z-index: 2; /* Bring header above the video */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+  z-index: 1; /* Place video behind the header */
+}
+
+.logo {
+  width: 200px;
+  height: auto; /* Adjust height as necessary */
+  cursor: pointer;
+  box-shadow: 0 cap;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 10px;
+}
+
+.search-container input {
+  min-width: 250px;
+  padding: 10px;
+}
+
+.search-container input:focus {
+  outline: 0;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0 40px;
+}
+
+.res-card {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.res-card:hover {
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.footer {
+  padding: 20px 10px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(170, 209, 209);
+}
+
+.filter-btn {
+  margin: 10px;
+  cursor: pointer;
+  width: 300px;
+  height: 25;
+  padding: 5px;
+}
+
+.login {
+  background-color: #2678cf;
+  color: white;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #0056b3;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  margin: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: #f0f0f0;
+}
+
+.search-box {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
